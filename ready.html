@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--계원예술대학교 21561075 유상호-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>그리기전-준비하기</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+      }
+      body{
+        background-color: #dcdcdc;
+      }
+      header{
+        /*상단 메뉴바 만들기*/
+        /*z-index9999를 쓰면 무조건 페이지 레이어 맨 위*/
+        /*top left 0을 설정하여 왼쪽 구석으로 고정*/
+        height: 75px; background-color: black; border-bottom: 2px solid gray;
+        position: fixed; width: 100%; z-index: 9999; top: 0; left: 0;
+      }
+      h1{
+        line-height: 75px; float: left;
+      }
+      #here{
+        color: yellow;
+        text-decoration: overline;
+      }
+
+      .menubar{
+        /*메뉴바 범위 지정*/
+        /*0은 상하 마진0, auto는 좌우 여백을 자동으로*/
+        width: 1200px; margin: 0 auto;
+      }
+      .menu{
+        float: right;
+        list-style: none;
+      }
+      .menu li{
+        float: left;
+      }
+      .menu a{
+        line-height: 75px; color: white; margin: 0 0 0 60px; display: block;
+      }
+      .menu a:link{
+        color: white;
+        text-decoration: none;
+      }
+      .menu a:visited{
+        color: white;
+        text-decoration: none;
+      }
+      .menu a:hover{
+        color: yellow;
+        text-decoration: underline;
+      }
+      .menu a:active{
+        color: #FF8000;
+      }
+
+      /*하단 만들기*/
+      .bott{
+        height: 200px; background-color: black; width: 100%;
+        border-top: 2px solid gray;
+      }
+      .bottbox{
+        width: 1200px; margin: 0 auto;
+      }
+      .bottbox li{
+        float: left;
+        list-style: none;
+        margin: 0 60px 0 0
+      }
+      .bottbox a{
+        line-height: 200px;
+      }
+      .bottbox p{
+        float: right;
+        color: white;
+        margin: 60px 0 0 0;
+      }
+
+      /*대문 + 글 규칙*/
+      .partone{
+        width: 1200px; height: 1300px; border: 2px solid black;
+        margin: 80px auto 80px auto;
+      }
+      h2{
+        margin: 20px 0 0 20px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 21px;
+        margin: 20px 20px 0 20px;
+      }
+      table{
+        border-collapse: collapse;
+        width: 1000px;
+        height: 400px;
+        margin: 80px auto;
+      }
+      table, td, th{
+        border: solid 2px black;
+        text-align: center;
+      }
+      .align{
+        text-align: left;
+        padding-left: 10px;
+      }
+      #top1{
+        background-color: white;
+      }
+
+      /*파트2*/
+      .parttwo{
+        width: 1200px; height: 500px; border: 2px solid black;
+        margin: 80px auto 80px auto;
+      }
+      .parttwo iframe{
+        margin:20px 10px 20px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--메뉴바-->
+      <div class="menubar">
+        <h1><a href="index.html"><img src="img/home.png" alt="시그니쳐" title="대문으로"> </a></h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="ready.html" id="here">준비하기</a></li>
+            <li><a href="study.html">강의</a></li>
+            <li><a href="download.html">자료실</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="partone">
+      <img src="img/ready.png">
+      <h2>몇 가지만 미리 준비해봅시다</h2>
+      <p>
+        준비물은 간단하게 종이, 지우개, 볼펜, 연필만 있어도 그만이고, 여기에 자신의 취향과 개성에 맞춰 여러 필기구를 준비해주세요. 아래의 표로 개인적으로 써보고 좋았던 도구들과 브랜드를 나열해보겠습니다.
+        이걸 그대로 사서 쓰셔도 되고 갖고 계신걸 쓰셔도 좋습니다. 저와 똑같은 드로잉 환경을 만들고 싶으신분들을 재료 설명을 읽고 참고하시며 준비하시면 되겠습니다.
+        준비물보다 더 중요한 건 마음의 준비입니다~!
+      </p>
+
+      <table>
+        <tr id="top1">
+          <th>준비물</th>
+          <th>설명</th>
+          <th>구매처</th>
+        </tr>
+        <tr>
+          <td>종이</td>
+          <td class="align">가장 중요하면서 가장 흔합니다. 프린트용 a4용지를 쓰셔도 되고 스케치북 등의 전문가용 종이를 사셔도 됩니다.<br>저는 무림제지의 a4 켄트지를 사서 씁니다.</td>
+          <td><a href="https://www.11st.co.kr/catalog/catalogDetail.tmall?method=catalogDetail&ctlgNo=27663044&trTypeCd=PW51&trCtgrNo=585021" target="_blank"><img src="img/buy.png"></a></td>
+        </tr>
+        <tr>
+          <td>연필</td>
+          <td class="align">연필은 잘 지워지는 것일수록 좋으며 h2와 hb경도의 연필이 가장 좋습니다. 쓸 때엔 종이에 상처가 남지 않도록<br>살살 쓰는 연습을 합시다. 저는 스테들러의 제품을 가장 좋아합니다.</td>
+          <td><a href="http://www.11st.co.kr/products/3300432785?trTypeCd=21&trCtgrNo=585021" target="_blank"><img src="img/buy.png"></a></td>
+        </tr>
+        <tr>
+          <td>지우개</td>
+          <td class="align">지우개는 딱딱한 물건보다는 부드럽고 종이를 망가뜨리지 않는 소재일수록 좋습니다. 플라스틱,고무 상관없이<br>브랜드가 품질을 많이 좌우하며, 저는 스테들러나 톰보 지우개를 사용합니다. </td>
+          <td><a href="http://www.11st.co.kr/products/3363930122?trTypeCd=PW24&trCtgrNo=585021" target="_blank"><img src="img/buy.png"></a></td>
+        </tr>
+        <tr>
+          <td>볼펜</td>
+          <td class="align">볼펜은 간단히 스케치한 종이에 선을 그리고 지우개를 쓸 때 연필선만 지워지도록 하며 볼펜똥이 안 남고 부드럽게<br>쓰이는 제품이면 무엇이든 좋습니다. 저는 유니 스타일핏 0.28mm를 가장 좋아합니다.</td>
+          <td><a href="https://www.11st.co.kr/catalog/catalogDetail.tmall?method=catalogDetail&ctlgNo=16827826&trTypeCd=PW51&trCtgrNo=585021" target="_blank"><img src="img/buy.png"></a></td>
+        </tr>
+        <tr>
+          <td>기름종이</td>
+          <td class="align">이건 그림연습을 할 때 쓰는 것인데, 스케치를 두 번 하기 번거롭거나 다른 연습물과 비교하기 위해 씁니다. 교재나<br>스케치 위에 기름종이를 깔고 거기에 볼펜선을 그리는 식으로 씁니다.(선택사항)</td>
+          <td><a href="http://www.11st.co.kr/products/1343465157?trTypeCd=PW24&trCtgrNo=585021" target="_blank"><img src="img/buy.png"></a></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="parttwo">
+      <h2>기초 스케치 연습해보기</h2>
+      <p>
+        우선 이 페이지에선 한선그림 따라그리기 연습을 위주로 진행할 생각이지만, 다음에라도 자신만의 그림을 그리기 위해서는 연필 스케치 연습을 꾸준히 하셔야합니다.<br>
+        제가 다른 분들을 가르칠 때 참고했던 유투브 영상 두개를 올려드릴테니, 천천히 연습해보며 나중엔 자립적인 그림을 그릴 수 있도록 해봅시다.<br>
+        이제 대략적인 준비가 끝났습니다. 스케치 연습은 꾸준히 연습하시고 준비물이 갖춰지셨다면 <a href="study.html"><strong>강의</strong></a>를 시청하시면 됩니다. 화이팅!
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/R6OQ5EuPYmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/q1S5ncI2bCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+
+
+
+
+    <div class="bott">
+      <div class="bottbox">
+        <ul>
+          <li><a href="https://www.instagram.com/gimgiraff/" target="_blank"><img src="img/insta.png" alt=""></a></li>
+          <li><a href="https://blog.naver.com/gimgirin" target="_blank"><img src="img/blog.png" alt=""></a></li>
+        </ul>
+        <p align="right">
+          본 홈페이지 내의 강의자료, 그림의 저작권은 모두 김기린(본명 유상호)에게 있습니다. <br>
+          개인 교재로만 활용해주시고 2차 유포, 교재 이외용도의 비영리, 영리 사용을 금합니다.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--계원예술대학교 21561075 유상호-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>한선그림 그려보기</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+      }
+      body{
+        background-color: #dcdcdc;
+      }
+      header{
+        /*상단 메뉴바 만들기*/
+        /*z-index9999를 쓰면 무조건 페이지 레이어 맨 위*/
+        /*top left 0을 설정하여 왼쪽 구석으로 고정*/
+        height: 75px; background-color: black; border-bottom: 2px solid gray;
+        position: fixed; width: 100%; z-index: 9999; top: 0; left: 0;
+      }
+      h1{
+        line-height: 75px; float: left;
+      }
+      #here{
+        color: yellow;
+        text-decoration: overline;
+      }
+
+      .menubar{
+        /*메뉴바 범위 지정*/
+        /*0은 상하 마진0, auto는 좌우 여백을 자동으로*/
+        width: 1200px; margin: 0 auto;
+      }
+      .menu{
+        float: right;
+        list-style: none;
+      }
+      .menu li{
+        float: left;
+      }
+      .menu a{
+        line-height: 75px; color: white; margin: 0 0 0 60px; display: block;
+      }
+      .menu a:link{
+        color: white;
+        text-decoration: none;
+      }
+      .menu a:visited{
+        color: white;
+        text-decoration: none;
+      }
+      .menu a:hover{
+        color: yellow;
+        text-decoration: underline;
+      }
+      .menu a:active{
+        color: #FF8000;
+      }
+
+      /*하단 만들기*/
+      .bott{
+        height: 200px; background-color: black; width: 100%;
+        border-top: 2px solid gray;
+      }
+      .bottbox{
+        width: 1200px; margin: 0 auto;
+      }
+      .bottbox li{
+        float: left;
+        list-style: none;
+        margin: 0 60px 0 0
+      }
+      .bottbox a{
+        line-height: 200px;
+      }
+      .bottbox p{
+        float: right;
+        color: white;
+        margin: 60px 0 0 0;
+      }
+
+      /*대문 + 글 규칙*/
+      .partone{
+        width: 1200px; height: 900px; border: 2px solid black;
+        margin: 80px auto 80px auto;
+      }
+      h2{
+        margin: 20px 0 0 20px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 21px;
+        margin: 20px 20px 0 20px;
+      }
+      #list{
+        width: 800px;
+        padding: 10px;
+        margin: 60px auto;
+        background-color: #eeeeee;
+        border: solid 1px #aaaaaa;
+        text-align: center;
+      }
+      #list li{
+        display: inline;
+        font-size:20px;
+      }
+      #list a{
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+
+
+      .studyone{
+        width: 1200px; height: 900px; border: 2px solid black;
+        margin: 200px auto 80px auto;
+      }
+      /*닥스훈트*/
+      .art_box1{
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        margin: 40px 20px;
+        border: solid 2px black;
+      }
+
+      /*선인장*/
+      .art_box2{
+        display: inline-block;
+        width: 552px;
+        height: 250px;
+        margin: 40px 20px;
+        border: solid 2px black;
+      }
+
+      /*민들레*/
+      .art_box3{
+        display: inline-block;
+        width: 352px;
+        height: 250px;
+        margin: 40px 20px;
+        border: solid 2px black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--메뉴바-->
+      <div class="menubar">
+        <h1><a href="index.html"><img src="img/home.png" alt="시그니쳐" title="대문으로"> </a></h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="ready.html">준비하기</a></li>
+            <li><a href="study.html" id="here">강의</a></li>
+            <li><a href="download.html">자료실</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="partone">
+      <img src="img/study.png">
+      <h2>한선그림을 연습해봅시다!</h2>
+      <p>
+        처음부터 무턱대고 사진만 주고 스케치를 해보고 선을 따보라 하지는 않겠습니다. 사실 이번 강의는 전부 다 따라그리기로 진행이 될 것입니다.
+        우선 제가 그린 예시들을 따라그리며 한선그림이 생각보다 복잡하고 어렵지 않음을 각인시켜드리고 싶습니다. 그러므로 이번에 준비한 교재들도 그리 어렵진 않을 것입니다.
+        만약 더 도전적인 과제가 필요하다 생각하시는 분들을 위해 <a href="download.html"><strong>자료실</strong></a>을 통해 추가 교재를 제공해드릴테니 강의 후에 열심히 해보시길 바라겠습니다.
+        아래의 목차 버튼 혹은 스크롤을 통해 순차적으로 진행해봅시다. 그럼 힘냅시다!
+      </p>
+      <ul id="list">
+        <li><a href="#one">1.닥스훈트 </a>│</li>
+        <li><a href="#two">2.선인장 </a>│</li>
+        <li><a href="#three">3.민들레 </a></li>
+      </ul>
+    </div>
+
+    <div id="one" class="studyone">
+      <img src="img/1_1.png">
+      <h2>1. 닥스훈트</h2>
+      <p>
+        이 그림은 피카소가 그린 닥스훈트의 한선그림에서 영감을 받아 그렸던 그림입니다. 총 4단계의 닥스훈트가 있으며 단계별로 더 깊어진 밀도와 디테일을 경험하실 수 있습니다.<br>
+        하나씩 따라그려보시며 어떻게 진행되는지 생각해보시며 그려보시길 바라겠습니다. 시작점과 끝점은 모두 콧등이며 밑의 박스를 클릭하시면 바로 교재를 열어보실 수 있습니다.
+      </p>
+      <div class="art_box1"><a href="img/dach1.jpg" target="_blank"><img src="img/1_11.png"></a></div>
+      <div class="art_box1"><a href="img/dach2.jpg" target="_blank"><img src="img/1_12.png"></a></div>
+      <div class="art_box1"><a href="img/dach3.jpg" target="_blank"><img src="img/1_13.png"></a></div>
+      <div class="art_box1"><a href="img/dach4.jpg" target="_blank"><img src="img/1_14.png"></a></div>
+    </div>
+
+    <div id="two" class="studyone">
+      <img src="img/1_2.png">
+      <h2>2. 선인장</h2>
+      <p>
+        이 그림은 반복되는 삐죽삐죽한 톱니모양으로도 충분히 한 폭의 그림을 그릴 수 있다는 의도로 그려본 것입니다. 두 가지 그림이 준비되었고 각기 다른 톱니와 모습을 갖추었습니다.<br>
+        자신은 어떤 패턴으로 이런 자연물을 그릴 수 있는가 생각해보며, 버튼의 표시된 점부터 찾아 천천히 따라그리고,  다른 모습과 다른 가시를 가진 선인장 사진을 이용해 자습도 해봅시다.
+      </p>
+      <div class="art_box2"><a href="img/tus1.jpg" target="_blank"><img src="img/1_21.png"></a></div>
+      <div class="art_box2"><a href="img/tus2.jpg" target="_blank"><img src="img/1_22.png"></a></div>
+    </div>
+
+
+    <div id="three" class="studyone">
+      <img src="img/1_3.png">
+      <h2>3. 민들레</h2>
+      <p>
+        이 그림은 톱니의 응용입니다. 톱니가 굳이 넓은 폭으로 진행 될 필요가 없다는 것을 보여줍니다. 톱니를 얇게 말아서 민들레 꽃을 만들 수 있고, 큼직하게 키우면 잎이 만들어집니다.<br>
+        조금 난이도가 있는 그림이니 우선 꽃부터 어떻게 만들어지는지 보여주기 위해 샘플을 첫번째 버튼으로 올려두었습니다. 맨 종이에 연습해보시고 따라그리기도 진행해봅시다.
+      </p>
+      <div class="art_box3"><a href="img/lion0.jpg" target="_blank"><img src="img/1_31.png"></a></div>
+      <div class="art_box3"><a href="img/lion1.jpg" target="_blank"><img src="img/1_32.png"></a></div>
+      <div class="art_box3"><a href="img/lion2.jpg" target="_blank"><img src="img/1_33.png"></a></div>
+    </div>
+
+
+    <div class="bott">
+      <div class="bottbox">
+        <ul>
+          <li><a href="https://www.instagram.com/gimgiraff/" target="_blank"><img src="img/insta.png" alt=""></a></li>
+          <li><a href="https://blog.naver.com/gimgirin" target="_blank"><img src="img/blog.png" alt=""></a></li>
+        </ul>
+        <p align="right">
+          본 홈페이지 내의 강의자료, 그림의 저작권은 모두 김기린(본명 유상호)에게 있습니다. <br>
+          개인 교재로만 활용해주시고 2차 유포, 교재 이외용도의 비영리, 영리 사용을 금합니다.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

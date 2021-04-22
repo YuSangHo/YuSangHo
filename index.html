@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--계원예술대학교 21561075 유상호-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>One-line drawing class</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+      }
+      body{
+        background-color: #dcdcdc;
+      }
+      header{
+        /*상단 메뉴바 만들기*/
+        /*z-index9999를 쓰면 무조건 페이지 레이어 맨 위*/
+        /*top left 0을 설정하여 왼쪽 구석으로 고정*/
+        height: 75px; background-color: black; border-bottom: 1px solid gray;
+        position: fixed; width: 100%; z-index: 9999; top: 0; left: 0;
+      }
+      h1{
+        line-height: 75px; float: left;
+      }
+      #here{
+        color: yellow;
+        text-decoration: overline;
+      }
+      .email{
+        color: blue; font-weight: bold; text-decoration: underline;
+      }
+
+      .menubar{
+        /*메뉴바 범위 지정*/
+        /*0은 상하 마진0, auto는 좌우 여백을 자동으로*/
+        width: 1200px; margin: 0 auto;
+      }
+      .menu{
+        float: right;
+        list-style: none;
+      }
+      .menu li{
+        float: left;
+      }
+      .menu a{
+        line-height: 75px; color: white; margin: 0 0 0 60px; display: block;
+      }
+      .menu a:link{
+        color: white;
+        text-decoration: none;
+      }
+      .menu a:visited{
+        color: white;
+        text-decoration: none;
+      }
+      .menu a:hover{
+        color: yellow;
+        text-decoration: underline;
+      }
+      .menu a:active{
+        color: #FF8000;
+      }
+
+      /*하단 만들기*/
+      .bott{
+        height: 200px; background-color: black; width: 100%;
+        border-top: 2px solid gray;
+      }
+      .bottbox{
+        width: 1200px; margin: 0 auto;
+      }
+      .bottbox li{
+        float: left;
+        list-style: none;
+        margin: 0 60px 0 0
+      }
+      .bottbox a{
+        line-height: 200px;
+      }
+      .bottbox p{
+        float: right;
+        color: white;
+        margin: 60px 0 0 0;
+      }
+
+      /*대문 + 글 규칙*/
+      .partone{
+        width: 1200px; height: 980px; border: 2px solid black;
+        margin: 80px auto 80px auto;
+      }
+      h2{
+        margin: 20px 0 0 20px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 21px;
+        margin: 20px 20px 0 20px;
+      }
+
+      /*한선그림 소개*/
+      .parttwo{
+        width: 1200px; height: 300px; border: 2px solid black;
+        margin: 80px auto 80px auto;
+      }
+      .twocon{
+        float: left;
+      }
+      .twocon ul{
+        list-style: circle;
+        margin:20px 0 20px 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--메뉴바-->
+      <div class="menubar">
+        <h1><a href="index.html"><img src="img/home.png" alt="시그니쳐" title="대문으로"> </a></h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="ready.html">준비하기</a></li>
+            <li><a href="study.html">강의</a></li>
+            <li><a href="download.html">자료실</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="partone">
+      <img src="img/welcome.gif" alt="">
+      <h2>환영합니다!</h2>
+      <p>
+        이 페이지는 김기린(유상호)작가가 만든 간략한 한선그림 연습 홈페이지입니다.
+        <br>완전히 배우기엔 불충분할 수도 있으나 간단한 취미활동, 심심풀이로 할만한 컨텐츠를 위주로 만들어 보았습니다.
+         그리고 더 배우고 싶으신 분들을 위해 심화 자료를 나중에 볼 수 있도록 구성해 보았으니 천천히 연습해보시고 모르는 것이 있으시다면
+        언제든 하단의 인스타, 블로그, 혹은 이메일 <span class="email">gimgiraff@gmail.com</span>을 통해 연락해주시면 성심껏 도와드리겠습니다~!
+      </p>
+    </div>
+
+    <div class="parttwo">
+        <div class="twocon">
+          <img src="img/pt2.png">
+        </div>
+        <div class="twocon">
+          <h2>한선그림이란?</h2>
+          <p>
+            한선그림은 말 그대로 <strong>선 하나로만 모든 것을 표현한 그림</strong>입니다. 하지만 흔히 아시는 <a href="https://www.google.com/search?q=%EC%BB%A8%ED%88%AC%EC%96%B4%EB%93%9C%EB%A1%9C%EC%9E%89&sxsrf=ALeKk01tpJl_1b4DfBotxHHdsQbgRCJpGQ:1619068800424&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjM8tyljZHwAhWTA4gKHRj0A7cQ_AUoAXoECAEQAw&biw=1745&bih=852" target="_blank">컨투어드로잉</a>과는 조금 다른 점이 있습니다.
+          </p>
+          <ul>
+            <li>컨투어드로잉과는 다르게 <u>종이에서 손을 떼고 이어그릴 수 있습니다</u></li>
+            <li>스케치를 해볼 수 있으며 <u>종이를 직접 보고</u> 세밀한 그림을 그리는 게 목표입니다.</li>
+            <li>하나의 선임을 어필하기 위해 <u>선과 선을 겹치지 않고 그립니다.</u> 눈으로 보고 쉬며 이어그리는 이유가 이것입니다.</li>
+          </ul>
+          <p>
+            말로만 설명하면 어려운 그림일 수 있습니다. 하지만 이 그림은 전혀 어렵지 않으며 꾸준히, 성실히 연습한다면 좋은 취미거리,<br>
+            나아가서 훌륭한 자기계발이 될 것입니다. 이제 강의를 시작해보겠습니다.<br><br>
+            재료, 기초 스케치 연습이 필요하시다면 <a href="ready.html"><strong>준비하기</strong></a>를, 자신이 기본기가 있다 생각하시면 <a href="study.html"><strong>강의</strong></a>를 눌러 진행해주십시오. 화이팅!
+          </p>
+        </div>
+    </div>
+
+    <div class="bott">
+      <div class="bottbox">
+        <ul>
+          <li><a href="https://www.instagram.com/gimgiraff/" target="_blank"><img src="img/insta.png" alt=""></a></li>
+          <li><a href="https://blog.naver.com/gimgirin" target="_blank"><img src="img/blog.png" alt=""></a></li>
+        </ul>
+        <p align="right">
+          본 홈페이지 내의 강의자료, 그림의 저작권은 모두 김기린(본명 유상호)에게 있습니다. <br>
+          개인 교재로만 활용해주시고 2차 유포, 교재 이외용도의 비영리, 영리 사용을 금합니다.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

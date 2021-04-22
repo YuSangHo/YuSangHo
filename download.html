@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--계원예술대학교 21561075 유상호-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>한선그림 자료실</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+      }
+      body{
+        background-color: #dcdcdc;
+      }
+      header{
+        /*상단 메뉴바 만들기*/
+        /*z-index9999를 쓰면 무조건 페이지 레이어 맨 위*/
+        /*top left 0을 설정하여 왼쪽 구석으로 고정*/
+        height: 75px; background-color: black; border-bottom: 1px solid gray;
+        position: fixed; width: 100%; z-index: 9999; top: 0; left: 0;
+      }
+      h1{
+        line-height: 75px; float: left;
+      }
+      #here{
+        color: yellow;
+        text-decoration: overline;
+      }
+      .email{
+        color: blue; font-weight: bold; text-decoration: underline;
+      }
+
+      .menubar{
+        /*메뉴바 범위 지정*/
+        /*0은 상하 마진0, auto는 좌우 여백을 자동으로*/
+        width: 1200px; margin: 0 auto;
+      }
+      .menu{
+        float: right;
+        list-style: none;
+      }
+      .menu li{
+        float: left;
+      }
+      .menu a{
+        line-height: 75px; color: white; margin: 0 0 0 60px; display: block;
+      }
+      .menu a:link{
+        color: white;
+        text-decoration: none;
+      }
+      .menu a:visited{
+        color: white;
+        text-decoration: none;
+      }
+      .menu a:hover{
+        color: yellow;
+        text-decoration: underline;
+      }
+      .menu a:active{
+        color: #FF8000;
+      }
+
+      /*하단 만들기*/
+      .bott{
+        height: 200px; background-color: black; width: 100%;
+        border-top: 2px solid gray;
+      }
+      .bottbox{
+        width: 1200px; margin: 0 auto;
+      }
+      .bottbox li{
+        float: left;
+        list-style: none;
+        margin: 0 60px 0 0
+      }
+      .bottbox a{
+        line-height: 200px;
+      }
+      .bottbox p{
+        float: right;
+        color: white;
+        margin: 60px 0 0 0;
+      }
+
+      /*대문*/
+      .partone{
+        width: 1200px; height: 780px; border: 2px solid black;
+        margin: 80px auto 80px auto;
+      }
+      .partone h2{
+        margin: 20px 0 0 20px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 21px;
+        margin: 20px 20px 0 20px;
+      }
+
+      /*자료실 폼*/
+      .downloader{
+        width: 1200px; height: 2720px; border: 2px solid black;
+        margin: 80px auto 80px auto;
+      }
+      table{
+        border-collapse: collapse;
+        background-color: black;
+        width: 550px;
+        height: 400px;
+        margin: 20px;
+        float: left;
+      }
+      table, td, th{
+        border: solid 2px black;
+        text-align: center;
+      }
+      .title{
+        background-color:white;
+        line-height: 40px;
+        margin: 10px auto;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--메뉴바-->
+      <div class="menubar">
+        <h1><a href="index.html"><img src="img/home.png" alt="시그니쳐" title="대문으로"> </a></h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="ready.html">준비하기</a></li>
+            <li><a href="study.html">강의</a></li>
+            <li><a href="download.html" id="here">자료실</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="partone">
+      <img src="img/download.png">
+      <h2>어서오세요~ 이곳은 자료실입니다.</h2>
+      <p>
+        이곳은 연습이 끝난 뒤 조금 더 도전적인 그림을 해 보고 싶은 분들을 위해 준비한 자료실입니다. 연습용 그림과 정답지가 준비되어있으니<br>
+        시작점과 끝점은 정답지를 참고하며 찾아보시고, 열심히 따라그려보시길 바라겠습니다. 다시 말씀드리지만 저는 언제나 답변을 드릴 수 있으니<br>
+        막히거나 궁금한 사항이 있으신 분들은 <span class="email">gimgiraff@gmail.com</span>로 언제든 연락 부탁드리겠습니다. 즐거운 그림생활 되세요!
+      </p>
+    </div>
+
+    <div class="downloader">
+      <table>
+        <tr>
+          <th colspan="2" class="title"><h2>1.골드리트리버</h2></th>
+        </tr>
+        <tr>
+          <th colspan="2"><img src="img/dwn1.jpg" width="550px" height="730px"></th>
+        </tr>
+        <tr>
+          <td><a href="img/paper1.jpg" target="_blank"><img src="img/paperbutton.png"></a></td>
+          <td><a href="img/cor1.jpg" target="_blank"><img src="img/corbutton.png"></a></td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th colspan="2" class="title"><h2>2.수국과 개구리</h2></th>
+        </tr>
+        <tr>
+          <th colspan="2"><img src="img/dwn2.jpg" width="550px" height="730px"></th>
+        </tr>
+        <tr>
+          <td><a href="img/paper2.jpg" target="_blank"><img src="img/paperbutton.png"></a></td>
+          <td><a href="img/cor2.jpg" target="_blank"><img src="img/corbutton.png"></a></td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th colspan="2" class="title"><h2>3.해마</h2></th>
+        </tr>
+        <tr>
+          <th colspan="2"><img src="img/dwn3.jpg" width="550px" height="730px"></th>
+        </tr>
+        <tr>
+          <td><a href="img/paper3.jpg" target="_blank"><img src="img/paperbutton.png"></a></td>
+          <td><a href="img/cor3.jpg" target="_blank"><img src="img/corbutton.png"></a></td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th colspan="2" class="title"><h2>4.기린</h2></th>
+        </tr>
+        <tr>
+          <th colspan="2"><img src="img/dwn4.jpg" width="550px" height="730px"></th>
+        </tr>
+        <tr>
+          <td><a href="img/paper4.jpg" target="_blank"><img src="img/paperbutton.png"></a></td>
+          <td><a href="img/cor4.jpg" target="_blank"><img src="img/corbutton.png"></a></td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th colspan="2" class="title"><h2>5.금붕어</h2></th>
+        </tr>
+        <tr>
+          <th colspan="2"><img src="img/dwn5.jpg" width="550px" height="730px"></th>
+        </tr>
+        <tr>
+          <td><a href="img/paper5.jpg" target="_blank"><img src="img/paperbutton.png"></a></td>
+          <td><a href="img/cor5.jpg" target="_blank"><img src="img/corbutton.png"></a></td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th colspan="2" class="title"><h2>6.범고래</h2></th>
+        </tr>
+        <tr>
+          <th colspan="2"><img src="img/dwn6.jpg" width="550px" height="730px"></th>
+        </tr>
+        <tr>
+          <td><a href="img/paper6.jpg" target="_blank"><img src="img/paperbutton.png"></a></td>
+          <td><a href="img/cor6.jpg" target="_blank"><img src="img/corbutton.png"></a></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="bott">
+      <div class="bottbox">
+        <ul>
+          <li><a href="https://www.instagram.com/gimgiraff/" target="_blank"><img src="img/insta.png" alt=""></a></li>
+          <li><a href="https://blog.naver.com/gimgirin" target="_blank"><img src="img/blog.png" alt=""></a></li>
+        </ul>
+        <p align="right">
+          본 홈페이지 내의 강의자료, 그림의 저작권은 모두 김기린(본명 유상호)에게 있습니다. <br>
+          개인 교재로만 활용해주시고 2차 유포, 교재 이외용도의 비영리, 영리 사용을 금합니다.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
